@@ -1,0 +1,21 @@
+this kafka related project
+covered topic
+1.create a topic into project building
+2.setup kafka producer and kafka template
+        -create producer factory method by Produce Configuration
+            -setup boostrap service
+            -key serializer and value serializer
+            -max size of file setup
+            -max buffer size setup
+3.setup kafka consumer
+          -create consumer factory method by Consumer Configuration
+              -setup boostrap service
+              -key serializer and value serializer
+4.create Kafka listener declare a method as listener and annotate as below
+        @KafkaListener(topics = "kumara",
+                    groupId = "groupId", containerFactory = "defaultListener"
+            )
+================================================================================
+pre setup kafka server and ZooKeeper...
+
+this project attach here........
